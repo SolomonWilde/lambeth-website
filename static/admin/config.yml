@@ -2,10 +2,8 @@ backend:
   name: github
   repo: SolomonWilde/lambeth-website
   branch: chopped
-  auth_type: implicit
   base_url: https://lambeth-techaid.netlify.app/
   site_domain: llambeth-techaid.netlify.app
-  auth_endpoint: api/hugo/auth
 media_folder: static/images
 public_folder: /images
 collections:
