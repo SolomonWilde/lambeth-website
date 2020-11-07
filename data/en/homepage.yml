@@ -34,16 +34,6 @@ subscription:
     of your cupboard? Or a smartphone gathering dust?
   text: Donate Device
   link: /app/donate-device
-supporter:
-    enable: true
-    bg_image: images/volunteers.jpg
-    title: We Want to Thank Our Supporters
-    content: Special thanks to these organisations that have been invaluable in helping
-      us to get up and running.
-    image1: images/sup_logo1.png
-    image2: images/sup_logo2.png
-    image3: images/sup_logo3.png
-    image4: images/sup_logo4.png
 testimonial:
   enable: true
   title: Recent Feedback
