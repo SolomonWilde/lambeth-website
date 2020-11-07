@@ -1,9 +1,6 @@
 backend:
   name: git-gateway
-  repo: SolomonWilde/lambeth-website
   branch: chopped
-  base_url: https://lambeth-techaid.netlify.app/
-  site_domain: llambeth-techaid.netlify.app
 media_folder: static/images
 public_folder: /images
 collections:
