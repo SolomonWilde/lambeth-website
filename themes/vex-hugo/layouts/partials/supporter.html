@@ -1,0 +1,22 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.supporter.enable }}
+{{- with $data.homepage.supporter }}
+<section class="call-to-action section bg-opacity" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 text-center mx-auto">
+        <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
+        <p class="text-white">{{ .content | markdownify }}</p>
+      </div>
+      <div class="row justify-content-md-center">
+        <img class="img-responsive" src="{{ .image1 | absURL }}" alt="">
+        <img class="img-responsive" src="{{ .image2 | absURL }}" alt="">
+        <img class="img-responsive" src="{{ .image3 | absURL }}" alt="">
+        <img class="img-responsive" src="{{ .image4 | absURL }}" alt="">
+      </div>
+    </div>
+  </div>
+</section><!-- #call-to-action close -->
+{{- end }}
+{{- end }}

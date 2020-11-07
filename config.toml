@@ -70,10 +70,10 @@ URL = "contact/"
 weight = 3
 
 # footer menu
-[[menu.footer]]
-name = "Blog"
-URL = "blog/"
-weight = 1
+#[[menu.footer]]
+#name = "Blog"
+#URL = "blog/"
+#weight = 1
 
 [[menu.footer]]
 name = "Contact"
