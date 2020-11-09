@@ -24,7 +24,7 @@
         {{ $files := readDir "./static/images" }}
         {{ range $files }}
           {{if eq "sup_" (substr .Name 0 4) }}
-            <img src="images/{{ .Name }}" alt="" style="width:80px;height:80px;"/>
+            <img src="images/{{ .Name }}" alt="" style="width:120px;"/>
           {{ end }}
         {{ end }}
       </div>
