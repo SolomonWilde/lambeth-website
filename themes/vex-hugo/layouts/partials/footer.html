@@ -11,8 +11,22 @@
             </li>
             {{ end }}
           </ul>
-          <p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
+          <div class="copyright-text">{{ site.Params.copyright | markdownify }}
+            <br>Proudly supported by
+          </div>         
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{ $files := readDir "./static/images" }}
+        {{ range $files }}
+          {{if eq "sup_" (substr .Name 0 4) }}
+            <img src="images/{{ .Name }}" alt="" style="width:80px;height:80px;"/>
+          {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
