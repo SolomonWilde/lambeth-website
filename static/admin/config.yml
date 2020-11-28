@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
-  branch: experiment
+  name: github
+  repo: techaid-tech/lambeth-website
+  auth_type: implicit
+  base_url: https://lambeth-techaid.ju.ma
+  site_domain: lambeth-techaid.ju.ma
+  auth_endpoint: api/hugo/auth
 media_folder: static/images
 public_folder: /images
 collections:
@@ -153,9 +157,3 @@ collections:
                       required: false,
                     }
                   - { label: "Content", name: "content", widget: "markdown" }
-  - name: "supporters"
-  label: "Supporters"
-  widget: list
-  fields:
-    - { label: "supporter", name: "supporter", widget: "image" }  
-
