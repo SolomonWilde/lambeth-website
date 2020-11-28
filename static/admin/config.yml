@@ -160,4 +160,5 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: "Supporter", name: "supporter", widget: "string" }
       - { label: "Supporter", name: "supporter", widget: "image" }
