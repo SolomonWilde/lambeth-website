@@ -48,12 +48,6 @@ name = "FAQs"
 URL = "/faqs/"
 weight = 3
 
-# main menu
-#[[menu.main]]
-#name = "Blog"
-#URL = "blog/"
-#weight = 3
-
 [[menu.main]]
 name = "Request Devices"
 URL = "app/organisation-device-request"
@@ -68,12 +62,6 @@ weight = 4
 name = "Contact"
 URL = "contact/"
 weight = 3
-
-# footer menu
-#[[menu.footer]]
-#name = "Blog"
-#URL = "blog/"
-#weight = 1
 
 [[menu.footer]]
 name = "Contact"
