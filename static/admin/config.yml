@@ -155,7 +155,13 @@ collections:
                   - { label: "Content", name: "content", widget: "markdown" }
   - name: "supporters"
     label: "Supporters"
-    file: "data/en/supporters.yml"
+    files:
+      - label: "Supporter Logos"
+        name: "supporters"
+        file: "data/en/supporters.yml"
+        fields:
+          - name: "image"
+            label: "image"
     create: true
     editor:
       preview: false
