@@ -162,9 +162,6 @@ collections:
       - label: "Supporter Logos"
         name: "supporters"
         file: "data/en/supporters.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "file" }
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "file" }
+      - { label: "Supporter", name: "supp", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
