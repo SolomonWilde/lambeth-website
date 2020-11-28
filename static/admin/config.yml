@@ -156,5 +156,6 @@ collections:
   - name: "supporters"
     label: "Supporters"
     folder: "static/images"
+    create: true
     fields:
       - { label: "Supporter", name: "supporter", widget: "image" }
