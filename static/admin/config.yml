@@ -161,4 +161,4 @@ collections:
       preview: false
     fields:
       - { label: "Supporter", name: "supporter", widget: "string" }
-      - { label: "Supporter", name: "supporter", widget: "image" }
+      - { label: "Logo", name: "logo", widget: "image" }
