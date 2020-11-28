@@ -155,10 +155,10 @@ collections:
                   - { label: "Content", name: "content", widget: "markdown" }
   - name: "supporters"
     label: "Supporters"
-    folder: "static/images"
+    file: "data/en/supporters.yml"
     create: true
     editor:
       preview: false
     fields:
-      - { label: "Supporter", name: "supporter", widget: "string" }
+      - { label: "Supporter", name: "image", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
