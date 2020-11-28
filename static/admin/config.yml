@@ -156,6 +156,6 @@ collections:
   - name: "supporters"
   label: "Supporters"
   widget: list
-  field:
+  fields:
     - { label: "supporter", name: "supporter", widget: "image" }  
 
