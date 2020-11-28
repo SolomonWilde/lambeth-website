@@ -153,3 +153,8 @@ collections:
                       required: false,
                     }
                   - { label: "Content", name: "content", widget: "markdown" }
+  - name: "homepage"
+    label: "Home Page"
+    widget: "list"
+    fields:
+      - { label: "Supporter", name: "supporter", widget: "image" }
