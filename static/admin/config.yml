@@ -160,8 +160,8 @@ collections:
         name: "supporters"
         file: "data/en/supporters.yml"
         fields:
-          - name: "image"
-            label: "image"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "file" }
     create: true
     editor:
       preview: false
