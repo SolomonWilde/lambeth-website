@@ -161,4 +161,4 @@ collections:
     fields:
       - { label: "Name", name: "supporter", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
-    folder: "data/en/supporter_logos"
+    folder: "themes/vex-hugo/layouts/partials/footer_logos"
