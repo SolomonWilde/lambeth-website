@@ -163,5 +163,5 @@ collections:
         editor:
           preview: false
         widget: "list"
-        fields:
+        field:
           - { label: "Logo", name: "logo", widget: "image" }
