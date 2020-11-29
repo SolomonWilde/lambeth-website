@@ -159,7 +159,8 @@ collections:
       - label: "Supporter Logos"
         name: "supporters"
         file: "data/en/supporters.yml"
-        widget: "list"
-        allow_add: "true"
         fields:
-          - { label: "Logo", name: "logo", widget: "image" }
+          widget: "list"
+          allow_add: "true"
+          fields:
+            - { label: "Logo", name: "logo", widget: "image" }
