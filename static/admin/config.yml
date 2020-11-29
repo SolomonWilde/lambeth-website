@@ -158,12 +158,7 @@ collections:
     editor:
       preview: false
     create: true
-    files:
-      - label: "Supporter Logos"
-        name: "supporters"
-        file: "data/en/supporters.yml"
-        fields:
-          - { name: name, label: label }
+    folder: "static/images"
     fields:
       - { label: "Supporter", name: "supp", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
