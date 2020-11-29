@@ -155,9 +155,6 @@ collections:
                   - { label: "Content", name: "content", widget: "markdown" }
   - name: "supporters"
     label: "Supporters"
-    editor:
-      preview: false
-    create: true
     fields:
       - { label: "Supporter", name: "supp", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
@@ -166,5 +163,8 @@ collections:
         name: "supporters"
         file: "data/en/supporters.yml"
         widget: "list"
+        editor:
+          preview: false
+        create: true
         fields:
           - { label: "Image", name: "image", widget: "file" }
