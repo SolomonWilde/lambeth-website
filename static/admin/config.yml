@@ -161,5 +161,5 @@ collections:
         file: "data/en/supporters.yml"
         widget: "list"
         multiple: true
-        field:
+        fields:
           - { label: "Logo", name: "logo", widget: "image" }
