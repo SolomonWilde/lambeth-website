@@ -158,7 +158,7 @@ collections:
     editor:
       preview: false
     create: true
-    folder: "static/images"
     fields:
       - { label: "Supporter", name: "supp", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
+    folder: "static/images"
