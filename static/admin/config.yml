@@ -160,9 +160,9 @@ collections:
         name: "supporters"
         file: "data/en/supporters.yml"
         widget: "list"
+        create: true
         editor:
           preview: false
-        create: true
         fields:
           fields:
             - { label: "Supporter", name: "supp", widget: "string" }
