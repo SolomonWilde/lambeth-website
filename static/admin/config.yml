@@ -160,4 +160,4 @@ collections:
         name: "supporters"
         file: "data/en/supporters.yml"
         fields:
-          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Logo", name: "logo", widget: "list" }
