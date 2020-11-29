@@ -21,11 +21,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        {{ $files := readDir "./static/images" }}
+        {{ $files := readDir "./themes/vex-hugo/layouts/partials/footer_logos" }}
         {{ range $files }}
-          {{if eq "sup_" (substr .Name 0 4) }}
-            <img src="images/{{ .Name }}" alt="" style="width:120px;"/>
-          {{ end }}
+            <!-- <img src="{{ .Name }}" alt="" style="width:120px;"/> -->
+            {{ $boy := resources.Get (.Name) }}
+            {{ print $boy }}
         {{ end }}
       </div>
     </div>

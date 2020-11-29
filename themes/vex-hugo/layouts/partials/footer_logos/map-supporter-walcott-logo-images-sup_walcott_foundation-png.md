@@ -1,4 +1,6 @@
 ---
 supporter: Walcott
-logo: /images/sup_walcott_foundation.png
+url: /images/sup_walcott_foundation.png
 ---
+
+The cat sat on the mat
