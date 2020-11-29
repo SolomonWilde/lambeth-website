@@ -165,5 +165,6 @@ collections:
       - label: "Supporter Logos"
         name: "supporters"
         file: "data/en/supporters.yml"
+        widget: "list"
         fields:
           - { label: "Image", name: "image", widget: "file" }
