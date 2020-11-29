@@ -154,11 +154,11 @@ collections:
                     }
                   - { label: "Content", name: "content", widget: "markdown" }
   - name: "supporters"
-  label: "Supporters"
-  editor:
-    preview: false
-  create: true
-  fields:
-    - { label: "Name", name: "supporter", widget: "string" }
-    - { label: "Logo", name: "logo", widget: "image" }
-  folder: "data/en/supporter_logos"
+    label: "Supporters"
+    editor:
+      preview: false
+    create: true
+    fields:
+      - { label: "Name", name: "supporter", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+    folder: "data/en/supporter_logos"
