@@ -23,9 +23,8 @@
       <div class="col-md-12">
         {{ $files := readDir "./themes/vex-hugo/layouts/partials/footer_logos" }}
         {{ range $files }}
-            <!-- <img src="{{ .Name }}" alt="" style="width:120px;"/> -->
-            {{ $boy := resources.Get (.Name) }}
-            {{ print $boy }}
+            {{ .Name }}
+            <img src="{{ .Name }}" alt="" style="width:120px;"/>
         {{ end }}
       </div>
     </div>

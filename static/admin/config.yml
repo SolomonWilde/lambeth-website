@@ -45,6 +45,49 @@ collections:
         fields:
           - { label: "question", name: "question", widget: "string" }
           - { label: "answer", name: "answer", widget: "markdown" }
+  - name: "faqs"
+    label: "FAQs"
+    create: true
+    folder: "content/english/faqs"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean" }
+      - {
+          label: "Weight",
+          name: "weight",
+          default: 10,
+          widget: "number",
+          hint: "The higher the weight, the lower down on the page the item will appear",
+        }
+      - {
+          label: "Body",
+          name: "body",
+          required: false,
+          widget: "markdown",
+          hint: "The content that appears at the top of the FAQ category",
+        }
+      - name: items
+        label: FAQ
+        widget: list
+        fields:
+          - { label: "question", name: "question", widget: "string" }
+          - { label: "answer", name: "answer", widget: "markdown" }
+          - name: "supporters"
+          label: "Supporters"
+          create: true
+          folder: "content/english/supporters"
+          editor:
+            preview: false
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - name: items
+              label: Supporter
+              widget: list
+              fields:
+                - { label: "name", name: "name", widget: "string" }
+                - { label: "logo", name: "logo", widget: "image" }
   - name: "news"
     label: "News"
     folder: "content/english/news"
@@ -56,6 +99,7 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Picture", name: "picture", widget: "image" }
       - { label: "Body", required: false, name: "body", widget: "markdown" }
   - name: "contact"
     label: "Contact Us"
@@ -153,13 +197,3 @@ collections:
                       required: false,
                     }
                   - { label: "Content", name: "content", widget: "markdown" }
-  - name: "supporters"
-    label: "Supporters"
-    editor:
-      preview: false
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Name", name: "supporter", widget: "string" }
-      - { label: "Logo", name: "logo", widget: "image" }
-    folder: "themes/vex-hugo/layouts/partials/footer_logos"
