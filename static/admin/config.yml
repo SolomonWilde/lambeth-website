@@ -155,15 +155,18 @@ collections:
                   - { label: "Content", name: "content", widget: "markdown" }
   - name: "supporters"
     label: "Supporters"
-    create: true
-    folder: "content/english/supporters"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - name: items
-        label: Supporter
-        widget: list
+    files:
+      - label: "Supporter Logos"
+        name: "logos"
+        file: "data/en/supporters.yml"
+        editor:
+          preview: false
         fields:
-          - { label: "name", name: "name", widget: "string" }
-          - { label: "logo", name: "logo", widget: "image" }
+          - { label: "Title", name: "title", widget: "string" }
+          - name: items
+            label: Supporter
+            widget: list
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "URL", name: "url", widget: "string", required: false }
+              - { label: "Logo", name: "logo", widget: "image" }
