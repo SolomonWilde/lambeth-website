@@ -56,6 +56,7 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Picture", name: "picture", widget: "image" }
       - { label: "Body", required: false, name: "body", widget: "markdown" }
   - name: "contact"
     label: "Contact Us"
