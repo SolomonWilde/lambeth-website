@@ -45,9 +45,9 @@ collections:
         fields:
           - { label: "question", name: "question", widget: "string" }
           - { label: "answer", name: "answer", widget: "markdown" }
-  - name: "news"
-    label: "News"
-    folder: "content/english/news"
+  - name: "blog"
+    label: "Blog"
+    folder: "content/english/blog"
     create: true
     editor:
       preview: false
@@ -56,7 +56,6 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Picture", name: "picture", widget: "image" }
       - { label: "Body", required: false, name: "body", widget: "markdown" }
   - name: "contact"
     label: "Contact Us"
